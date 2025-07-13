@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeleniaProject - 次世代のコンピューティング環境の標準を目指して</title>
+    <meta name="description" content="SeleniaProjectは、RustとAIを活用して開発される次世代のコンピューティング環境です。">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ナビゲーションバー -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/images/logo.png" alt="SeleniaProject Logo" class="nav__logo-img">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+                    <li class="nav__item"><a href="#progress" class="nav__link">Progress</a></li>
+                    <li class="nav__item"><a href="#roadmap" class="nav__link">Roadmap</a></li>
+                    <li class="nav__item"><a href="#support" class="nav__link nav__link-highlight">Support Us</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- ヒーローセクション -->
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">SeleniaProject</h1>
+                    <p class="hero__subtitle">AI-driven • Next generation project made of Rust</p>
+                    <div class="hero__buttons">
+                        <a href="#" class="button button--primary">Support on Kickstarter</a>
+                        <a href="#about" class="button button--ghost">Learn More</a>
+                    </div>
+                    <p class="hero__creator">Created by Aqua</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aboutセクション -->
+        <section class="about section" id="about">
+            <div class="about__container container">
+                <h2 class="section__title">What is SeleniaProject?</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__description">
+                            SeleniaProjectは、Rustで開発された完全なプロジェクトであり、一人の開発者による前例のない挑戦です。
+                            次世代のコンピューティング環境の標準となることを目指しています。
+                        </p>
+                        <p class="about__note">
+                            ※ 重要: AIは開発ツールとして活用されており、OS自体にAI機能は組み込まれません。
+                        </p>
+                    </div>
+                    <div class="about__components">
+                        <img src="assets/images/components.png" alt="SeleniaProject Components" class="about__components-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featuresセクション -->
+        <section class="features section" id="features">
+            <div class="features__container container">
+                <h2 class="section__title">Technical Features</h2>
+                <div class="features__grid">
+                    <!-- Rust Feature -->
+                    <div class="feature__card">
+                        <div class="feature__icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="feature__title">Made entirely of Rust</h3>
+                        <ul class="feature__list">
+                            <li>メモリエラーとデータ競合を言語レベルで防止</li>
+                            <li>C/C++に匹敵する高パフォーマンス</li>
+                            <li>単一言語による開発効率の向上</li>
+                        </ul>
+                    </div>
+
+                    <!-- AI Feature -->
+                    <div class="feature__card">
+                        <div class="feature__icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="feature__title">AI Utilization</h3>
+                        <ul class="feature__list">
+                            <li>月間600万行以上のコード自動生成</li>
+                            <li>自動エラーチェックと最適化提案</li>
+                            <li>開発ライフサイクル全体をAIがサポート</li>
+                        </ul>
+                        <p class="feature__note">※ AIは開発ツールとして使用され、OS自体には組み込まれません</p>
+                    </div>
+
+                    <!-- Multi-architecture Feature -->
+                    <div class="feature__card">
+                        <div class="feature__icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3 class="feature__title">Multi-architecture support</h3>
+                        <ul class="feature__list">
+                            <li>x86_64 (デスクトップPC・サーバー)</li>
+                            <li>ARM (スマートフォン・組込機器)</li>
+                            <li>RISC-V (オープンソース・カスタマイズ重視)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Configuration Feature -->
+                    <div class="feature__card">
+                        <div class="feature__icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3 class="feature__title">Separate configuration</h3>
+                        <ul class="feature__list">
+                            <li>高い拡張性で新機能の追加・置換が容易</li>
+                            <li>他プロジェクトでの再利用性</li>
+                            <li>問題の影響範囲を限定し保守を容易に</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progressセクション -->
+        <section class="progress section" id="progress">
+            <div class="progress__container container">
+                <h2 class="section__title">Current development progress</h2>
+                <div class="progress__content">
+                    <div class="progress__items">
+                        <div class="progress__item">
+                            <div class="progress__info">
+                                <h3 class="progress__name">AetherOS (kernel)</h3>
+                                <span class="progress__percentage">50%</span>
+                            </div>
+                            <div class="progress__bar">
+                                <span class="progress__fill" style="width: 50%"></span>
+                            </div>
+                            <p class="progress__description">基本的なメモリ管理、割り込み処理、ドライバ実装進行中</p>
+                        </div>
+
+                        <div class="progress__item">
+                            <div class="progress__info">
+                                <h3 class="progress__name">AetherFS (Filesystem)</h3>
+                                <span class="progress__percentage">70%</span>
+                            </div>
+                            <div class="progress__bar">
+                                <span class="progress__fill" style="width: 70%"></span>
+                            </div>
+                            <p class="progress__description">ファイル構造・読み書き制御実装済み</p>
+                        </div>
+
+                        <div class="progress__item">
+                            <div class="progress__info">
+                                <h3 class="progress__name">LumiaDesktop (Desktop)</h3>
+                                <span class="progress__percentage">70%</span>
+                            </div>
+                            <div class="progress__bar">
+                                <span class="progress__fill" style="width: 70%"></span>
+                            </div>
+                            <p class="progress__description">UI設計・描画進行中、結合テストフェーズ</p>
+                        </div>
+
+                        <div class="progress__item">
+                            <div class="progress__info">
+                                <h3 class="progress__name">FerroShell (Shell)</h3>
+                                <span class="progress__percentage">100%</span>
+                            </div>
+                            <div class="progress__bar">
+                                <span class="progress__fill" style="width: 100%"></span>
+                            </div>
+                            <p class="progress__description">完了</p>
+                        </div>
+
+                        <div class="progress__item">
+                            <div class="progress__info">
+                                <h3 class="progress__name">Selenet (Browser)</h3>
+                                <span class="progress__percentage">70%</span>
+                            </div>
+                            <div class="progress__bar">
+                                <span class="progress__fill" style="width: 70%"></span>
+                            </div>
+                            <p class="progress__description">基本機能完了、JavaScriptEngine統合待ち</p>
+                        </div>
+
+                        <div class="progress__item">
+                            <div class="progress__info">
+                                <h3 class="progress__name">AeroJS (JavaScriptEngine)</h3>
+                                <span class="progress__percentage">0%</span>
+                            </div>
+                            <div class="progress__bar">
+                                <span class="progress__fill" style="width: 0%"></span>
+                            </div>
+                            <p class="progress__description">未着手</p>
+                        </div>
+                    </div>
+                    <div class="progress__screenshot">
+                        <img src="assets/images/screenshot.png" alt="FerroShell Screenshot" class="progress__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmapセクション -->
+        <section class="roadmap section" id="roadmap">
+            <div class="roadmap__container container">
+                <h2 class="section__title">Future Outlook</h2>
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Most Recent Targets (~2025年8月31日)</h3>
+                            <ul class="timeline__list">
+                                <li>AetherOSカーネル完成・起動可能に</li>
+                                <li>LumiaDesktop安定版の統合</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Target within 2025 (~2025年12月)</h3>
+                            <ul class="timeline__list">
+                                <li>Selenetブラウザ・AeroJS初期版リリース</li>
+                                <li>最小限のGUIを備えたデモ環境の提供</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Long-term plan (2026年以降)</h3>
+                            <ul class="timeline__list">
+                                <li>プロプライエタリOSとしてのライセンス販売</li>
+                                <li>技術書籍・技術イベントでの紹介</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Supportセクション -->
+        <section class="support section" id="support">
+            <div class="support__container container">
+                <h2 class="section__title">Request and thank you for your support</h2>
+                <div class="support__content">
+                    <p class="support__description">
+                        SeleniaProjectは、コミュニティの温かいサポートに支えられています。
+                        この野心的な挑戦を共有していただける個人・企業の皆様との協力を楽しみにしています。
+                    </p>
+
+                    <div class="support__benefits">
+                        <h3 class="support__subtitle">スポンサー特典</h3>
+                        <div class="benefits__grid">
+                            <div class="benefit__item">
+                                <i class="fas fa-image"></i>
+                                <h4>Logo Listing</h4>
+                                <p>公式サイトでのロゴ掲載</p>
+                            </div>
+                            <div class="benefit__item">
+                                <i class="fas fa-award"></i>
+                                <h4>Credit notation</h4>
+                                <p>製品内でのクレジット表記</p>
+                            </div>
+                            <div class="benefit__item">
+                                <i class="fas fa-share-alt"></i>
+                                <h4>SNS</h4>
+                                <p>SNSでの告知・紹介</p>
+                            </div>
+                            <div class="benefit__item">
+                                <i class="fas fa-newspaper"></i>
+                                <h4>Media Exposure</h4>
+                                <p>メディア露出時の優先的な紹介</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support__ways">
+                        <h3 class="support__subtitle">プロジェクトへの貢献方法</h3>
+                        <div class="ways__grid">
+                            <div class="way__item">
+                                <i class="fas fa-code"></i>
+                                <h4>Technical Contribution</h4>
+                                <p>コード、バグ報告、ドキュメント作成など</p>
+                            </div>
+                            <div class="way__item">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <h4>Financial Support</h4>
+                                <p>開発機器、サーバーメンテナンスなどへの寄付</p>
+                            </div>
+                            <div class="way__item">
+                                <i class="fas fa-comments"></i>
+                                <h4>Feedback</h4>
+                                <p>コメント、提案など</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support__cta">
+                        <a href="#" class="button button--primary button--large">Support on Kickstarter</a>
+                        <a href="#contact" class="button button--ghost button--large">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contactセクション -->
+        <section class="contact section" id="contact">
+            <div class="contact__container container">
+                <h2 class="section__title">Contact</h2>
+                <div class="contact__content">
+                    <p class="contact__description">
+                        お問い合わせやご相談は下記までお願いいたします。
+                    </p>
+                    <div class="contact__info">
+                        <a href="mailto:arivell.team@gmail.com" class="contact__item">
+                            <i class="fas fa-envelope"></i>
+                            <span>arivell.team@gmail.com</span>
+                        </a>
+                        <a href="https://arivell.com" target="_blank" rel="noopener noreferrer" class="contact__item">
+                            <i class="fas fa-globe"></i>
+                            <span>https://arivell.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <p class="footer__copy">© 2025 SeleniaProject. All rights reserved.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
