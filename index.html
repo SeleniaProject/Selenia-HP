@@ -7,9 +7,11 @@
     <meta name="description" content="SeleniaProjectは、RustとAIを活用して開発される次世代のコンピューティング環境です。">
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- ナビゲーションバー -->
@@ -46,13 +48,13 @@
         <section class="hero section" id="home">
             <div class="hero__container container">
                 <div class="hero__content">
-                    <h1 class="hero__title">SeleniaProject</h1>
-                    <p class="hero__subtitle">AI-driven • Next generation project made of Rust</p>
-                    <div class="hero__buttons">
+                    <h1 class="hero__title" data-aos="fade-up">SeleniaProject</h1>
+                    <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="100">AI-driven • Next generation project made of Rust</p>
+                    <div class="hero__buttons" data-aos="fade-up" data-aos-delay="200">
                         <a href="#" class="button button--primary">Support on Kickstarter</a>
                         <a href="#about" class="button button--ghost">Learn More</a>
                     </div>
-                    <p class="hero__creator">Created by Aqua</p>
+                    <p class="hero__creator" data-aos="fade-up" data-aos-delay="300">Created by Aqua</p>
                 </div>
             </div>
         </section>
@@ -361,6 +363,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
