@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SeleniaProject - Next Generation Computing Environment</title>
-    <meta name="description" content="SeleniaProject - AI-driven next generation project made of Rust. The standard for the next generation of computing environments.">
-    <meta name="keywords" content="SeleniaProject, Rust, Operating System, AI, Next Generation, Computing, AetherOS, LumiaDesktop, FerroShell, Selenet, AeroJS">
+    <title>SeleniaProject - Kickstarter Rewards</title>
+    <meta name="description" content="SeleniaProject - Support our AI-driven next generation project and receive exclusive rewards.">
+    <meta name="keywords" content="SeleniaProject, Kickstarter, Rewards, Support, AetherOS, LumiaDesktop, FerroShell, Selenet, AeroJS">
     <meta name="author" content="Aqua">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,13 +21,13 @@
                 <span class="logo-text">SeleniaProject</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="project.html" class="nav-link">Project</a></li>
-                <li><a href="rewards.html" class="nav-link">Rewards</a></li>
-                <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a href="#progress" class="nav-link">Progress</a></li>
-                <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="rewards.html" class="nav-link active">Rewards</a></li>
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="index.html#progress" class="nav-link">Progress</a></li>
+                <li><a href="index.html#roadmap" class="nav-link">Roadmap</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -38,341 +38,29 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero rewards-hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">SeleniaProject</h1>
-                <p class="hero-subtitle">AI-driven • Next generation project made of Rust</p>
-                <div class="hero-logo">
-                    <img src="Logo/SeleniaProject .png" alt="SeleniaProject Main Logo" class="hero-logo-img">
-                </div>
-                <div class="hero-buttons">
-                    <a href="rewards.html" class="btn btn-primary">Support on Kickstarter</a>
-                    <a href="#about" class="btn btn-secondary">Learn More</a>
-                </div>
-                <div class="hero-creator">
-                    <p>Created by <span class="creator-name">Aqua</span></p>
-                </div>
-            </div>
-        </div>
-        <div class="hero-background"></div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">What is SeleniaProject?</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-description">
-                        A complete project, developed with Rust and AI<br>
-                        An unprecedented challenge by a single developer<br>
-                        Aiming to be "the standard for the next generation of computing environments"
-                    </p>
-                    <div class="about-note">
-                        <p><strong>Important Note:</strong> AI is a development tool, and AI functionality is not built into the OS itself. AI (primarily Claude 4 Sonnet) is used to accelerate the development process, enabling the generation of over 6 million lines of code per month and providing automatic error checking and optimization suggestions.</p>
-                    </div>
-                </div>
-                <div class="components-diagram">
-                    <h3>Core Components</h3>
-                    <div class="components-circle">
-                        <img src="Logo/SeleniaProject .png" alt="SeleniaProject Logo" class="selenia-center-logo">
-                        <!-- 1. AetherOS (上) -->
-                        <div class="component-item" data-component="aetheros">
-                            <img src="Logo/AetherOS.png" alt="AetherOS" class="component-icon">
-                            <span class="component-name">AetherOS</span>
-                            <div class="component-tooltip">
-                                <h4>AetherOS</h4>
-                                <p>The core kernel of SeleniaProject, built entirely in Rust for maximum safety and performance.</p>
-                            </div>
-                        </div>
-                        <!-- 2. LumiaDesktop (右上) -->
-                        <div class="component-item" data-component="lumiadesktop">
-                            <img src="Logo/LumiaDesktop.png" alt="LumiaDesktop" class="component-icon">
-                            <span class="component-name">LumiaDesktop</span>
-                            <div class="component-tooltip">
-                                <h4>LumiaDesktop</h4>
-                                <p>Modern desktop environment with intuitive UI design and advanced window management.</p>
-                            </div>
-                        </div>
-                        <!-- 3. FerroShell (右下) -->
-                        <div class="component-item" data-component="ferroshell">
-                            <img src="Logo/FerroShell.png" alt="FerroShell" class="component-icon">
-                            <span class="component-name">FerroShell</span>
-                            <div class="component-tooltip">
-                                <h4>FerroShell</h4>
-                                <p>Advanced shell environment with powerful scripting capabilities and modern terminal features.</p>
-                            </div>
-                        </div>
-                        <!-- 4. Selenet (下) -->
-                        <div class="component-item" data-component="selenet">
-                            <img src="Logo/Selenet.png" alt="Selenet" class="component-icon">
-                            <span class="component-name">Selenet</span>
-                            <div class="component-tooltip">
-                                <h4>Selenet</h4>
-                                <p>Next-generation web browser with advanced HTML rendering and DOM manipulation capabilities.</p>
-                            </div>
-                        </div>
-                        <!-- 5. AeroJS (左下) -->
-                        <div class="component-item" data-component="aerojs">
-                            <img src="Logo/AeroJS.png" alt="AeroJS" class="component-icon">
-                            <span class="component-name">AeroJS</span>
-                            <div class="component-tooltip">
-                                <h4>AeroJS</h4>
-                                <p>High-performance JavaScript engine optimized for modern web applications.</p>
-                            </div>
-                        </div>
-                        <!-- 6. 将来の拡張用（現在は非表示） -->
-                        <div class="component-item" data-component="future">
-                            <img src="Logo/SeleniaProject .png" alt="Future Component" class="component-icon">
-                            <span class="component-name">Future</span>
-                            <div class="component-tooltip">
-                                <h4>Future Component</h4>
-                                <p>Space reserved for future expansion of the SeleniaProject ecosystem.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h1 class="hero-title">Kickstarter Rewards</h1>
+                <p class="hero-subtitle">Support SeleniaProject and become part of computing history</p>
             </div>
         </div>
     </section>
 
-    <!-- Technical Features Section -->
-    <section id="features" class="features">
+    <!-- Rewards Introduction -->
+    <section class="rewards-intro-section">
         <div class="container">
-            <h2 class="section-title">Technical Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    <h3>Made entirely of Rust</h3>
-                    <p>The entire ecosystem, from the kernel to the desktop environment, is consistently developed in the Rust language</p>
-                    <ul class="feature-list">
-                        <li>Prevents memory errors and data conflicts at the language level</li>
-                        <li>High performance comparable to C/C++</li>
-                        <li>Single language improves development efficiency</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                        </svg>
-                    </div>
-                    <h3>AI Utilization</h3>
-                    <p>Actively integrating AI (primarily Claude 4 Sonnet) into the development process, we are pushing the limits of individual development</p>
-                    <ul class="feature-list">
-                        <li>Automatic generation of more than 6 million lines of code per month</li>
-                        <li>Automatic error checking and optimization suggestions</li>
-                        <li>AI supports the entire development lifecycle</li>
-                    </ul>
-                    <div class="feature-note">
-                        <p><strong>Note:</strong> AI is a tool to accelerate the development process and is not built into the OS itself.</p>
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
-                        </svg>
-                    </div>
-                    <h3>Multi-architecture support</h3>
-                    <p>High portability independent of specific hardware</p>
-                    <ul class="feature-list">
-                        <li>x86_64 (for desktop PCs and servers)</li>
-                        <li>ARM (Smartphones・Embedded devices)</li>
-                        <li>RISC-V (Open source・Focus on customization)</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    <h3>Separate configuration</h3>
-                    <p>Loosely coupled" modular design where each component functions independently</p>
-                    <ul class="feature-list">
-                        <li>Highly scalable for easy addition or replacement of new features</li>
-                        <li>Reusability for use in other projects</li>
-                        <li>Limits the scope of problem impact and facilitates maintenance</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="features-footer">
-                <p>These technical features overcome the challenges posed by conventional OSs and aim to become the standard for next-generation computing environments.</p>
+            <div class="rewards-intro-content">
+                <h2 class="section-title">Support the Future of Computing</h2>
+                <p class="intro-text">By supporting SeleniaProject, you're not just funding a project—you're becoming part of a revolution in computing. Each reward tier offers unique benefits and exclusive access to our development process, technologies, and the final products.</p>
+                <p class="intro-highlight">All rewards are digital and designed to provide meaningful value to supporters at every level.</p>
             </div>
         </div>
     </section>
 
-    <!-- Progress Section -->
-    <section id="progress" class="progress">
+    <!-- Kickstarter Rewards -->
+    <section class="rewards-main">
         <div class="container">
-            <h2 class="section-title">Current development progress</h2>
-            <p class="section-subtitle">Development status and progress of each component</p>
-            
-            <div class="progress-grid">
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <img src="Logo/AetherOS.png" alt="AetherOS" class="progress-icon">
-                        <h3>AetherOS (kernel)</h3>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" data-progress="50"></div>
-                    </div>
-                    <p class="progress-percentage">50%</p>
-                    <p class="progress-description">Basic memory management, interrupt handling, driver implementation in progress</p>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <img src="Logo/AetherOS.png" alt="AetherFS" class="progress-icon">
-                        <h3>AetherFS (Filesystem)</h3>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" data-progress="70"></div>
-                    </div>
-                    <p class="progress-percentage">70%</p>
-                    <p class="progress-description">File structure・read/write control already implemented</p>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <img src="Logo/LumiaDesktop.png" alt="LumiaDesktop" class="progress-icon">
-                        <h3>LumiaDesktop (Desktop)</h3>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" data-progress="70"></div>
-                    </div>
-                    <p class="progress-percentage">70%</p>
-                    <p class="progress-description">UI design and drawing in progress, integration testing phase</p>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <img src="Logo/FerroShell.png" alt="FerroShell" class="progress-icon">
-                        <h3>FerroShell (Shell)</h3>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" data-progress="100"></div>
-                    </div>
-                    <p class="progress-percentage">100%</p>
-                    <p class="progress-description">Completed</p>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <img src="Logo/Selenet.png" alt="Selenet" class="progress-icon">
-                        <h3>Selenet (Browser)</h3>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" data-progress="70"></div>
-                    </div>
-                    <p class="progress-percentage">70%</p>
-                    <p class="progress-description">Basic functionality completed, awaiting integration with JavaScriptEngine</p>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <img src="Logo/AeroJS.png" alt="AeroJS" class="progress-icon">
-                        <h3>AeroJS (JavaScriptEngine)</h3>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" data-progress="0"></div>
-                    </div>
-                    <p class="progress-percentage">0%</p>
-                    <p class="progress-description">Not yet started</p>
-                </div>
-            </div>
-
-            <div class="progress-summary">
-                <h3>Overall Summary</h3>
-                <p>Shell environment completed, kernel and desktop environment development in progress</p>
-            </div>
-
-            <div class="screenshots-section">
-                <h3>Working Screenshots</h3>
-                <div class="screenshots-grid">
-                    <div class="screenshot-item">
-                        <img src="presentation/image.png" alt="FerroShell Screenshot" class="screenshot-img">
-                        <p class="screenshot-caption">FerroShell - Completed shell environment with advanced terminal features</p>
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="presentation/image copy.png" alt="Selenet Browser Screenshot" class="screenshot-img">
-                        <p class="screenshot-caption">Selenet Browser - HTML rendering, DOM manipulation, and console.log output achieved on the first day of development</p>
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="presentation/image copy 2.png" alt="Development Progress" class="screenshot-img">
-                        <p class="screenshot-caption">Development analytics showing rapid progress with AI assistance</p>
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="presentation/image copy 3.png" alt="Component Architecture" class="screenshot-img">
-                        <p class="screenshot-caption">Component architecture demonstrating modular design and integration</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Roadmap Section -->
-    <section id="roadmap" class="roadmap">
-        <div class="container">
-            <h2 class="section-title">Future Outlook</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">August 31, 2024</div>
-                    <div class="timeline-content">
-                        <h3>Most Recent Targets</h3>
-                        <ul>
-                            <li>AetherOS kernel completed・Bootable</li>
-                            <li>Integration of LumiaDesktop stable version</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">December 2024</div>
-                    <div class="timeline-content">
-                        <h3>Target within 2024</h3>
-                        <ul>
-                            <li>Initial version of Selenet browser・AeroJS released</li>
-                            <li>Demonstration environment with minimal GUI available</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2025 and Beyond</div>
-                    <div class="timeline-content">
-                        <h3>Long-term plan</h3>
-                        <ul>
-                            <li>Licensed and sold as proprietary OS</li>
-                            <li>Technical books・Introduction at technical events</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="roadmap-summary">
-                <p>Through the achievement of its phased goals, SeleniaProject will establish itself as "the standard for the next generation of computing environments" and build a sustainable ecosystem.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Support Section -->
-    <section id="support" class="support">
-        <div class="container">
-            <h2 class="section-title">Support SeleniaProject</h2>
-            <div class="support-intro">
-                <p>Help us revolutionize the future of computing with your support. Each reward tier offers unique access to the development process and exclusive digital collectibles.</p>
-            </div>
-
             <div class="kickstarter-rewards">
                 <h3>SeleniaProject Kickstarter Rewards (Realistic Edition)</h3>
                 <div class="license-pricing">
@@ -712,24 +400,46 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="support-actions">
-                <a href="rewards.html" class="btn btn-primary btn-large">Support on Kickstarter</a>
-                <a href="#contact" class="btn btn-secondary">Contact Us for More Information</a>
+    <!-- Reward Benefits -->
+    <section class="reward-benefits">
+        <div class="container">
+            <h2 class="section-title">Why Support SeleniaProject?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚀</div>
+                    <h3>Be Part of Innovation</h3>
+                    <p>Join us at the forefront of computing innovation, where AI and system-level programming converge to create the next generation of operating systems.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">👁️</div>
+                    <h3>Exclusive Access</h3>
+                    <p>Gain behind-the-scenes access to our development process, technical insights, and early versions of our products before they're available to the general public.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔮</div>
+                    <h3>Shape the Future</h3>
+                    <p>Higher-tier supporters have the opportunity to influence the direction of the project, from naming components to suggesting features and capabilities.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💼</div>
+                    <h3>Investment Value</h3>
+                    <p>Early supporters receive substantial discounts on licenses and perpetual access to future updates and products, representing significant long-term value.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Support CTA -->
+    <section class="support-cta">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-info">
-                <p>If you are interested, please contact us!</p>
-                <div class="contact-details">
-                    <p><strong>Email:</strong> <a href="mailto:selenia.project@gmail.com">selenia.project@gmail.com</a></p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/menchan-Rub" target="_blank">https://github.com/menchan-Rub</a></p>
-                </div>
+            <h2>Ready to Support SeleniaProject?</h2>
+            <p>Choose your reward tier and join us in creating the future of computing.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary btn-large">Back Us on Kickstarter</a>
+                <a href="index.html#contact" class="btn btn-secondary">Contact for Questions</a>
             </div>
         </div>
     </section>
@@ -738,7 +448,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 SeleniaProject. All rights reserved.</p>
+                <p>&copy; 2025 SeleniaProject. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="https://github.com/menchan-Rub" target="_blank">GitHub</a>
                 </div>
