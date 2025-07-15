@@ -463,7 +463,7 @@ section {
     overflow: visible;
 }
 
-/* 線を引くための疑似要素 */
+/* 星形の線を引くための疑似要素 */
 .components-circle::after {
     content: '';
     position: absolute;
@@ -471,13 +471,12 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
-        linear-gradient(60deg, transparent 49.5%, var(--border-color) 49.7%, var(--border-color) 50.3%, transparent 50.5%),
-        linear-gradient(120deg, transparent 49.5%, var(--border-color) 49.7%, var(--border-color) 50.3%, transparent 50.5%),
-        linear-gradient(180deg, transparent 49.5%, var(--border-color) 49.7%, var(--border-color) 50.3%, transparent 50.5%),
-        linear-gradient(240deg, transparent 49.5%, var(--border-color) 49.7%, var(--border-color) 50.3%, transparent 50.5%),
-        linear-gradient(300deg, transparent 49.5%, var(--border-color) 49.7%, var(--border-color) 50.3%, transparent 50.5%),
-        linear-gradient(360deg, transparent 49.5%, var(--border-color) 49.7%, var(--border-color) 50.3%, transparent 50.5%);
+    background-image: 
+        linear-gradient(to top, transparent 49%, var(--border-color) 49.5%, var(--border-color) 50.5%, transparent 51%),
+        linear-gradient(to bottom right, transparent 49%, var(--border-color) 49.5%, var(--border-color) 50.5%, transparent 51%),
+        linear-gradient(to bottom left, transparent 49%, var(--border-color) 49.5%, var(--border-color) 50.5%, transparent 51%),
+        linear-gradient(to top right, transparent 49%, var(--border-color) 49.5%, var(--border-color) 50.5%, transparent 51%),
+        linear-gradient(to top left, transparent 49%, var(--border-color) 49.5%, var(--border-color) 50.5%, transparent 51%);
     border-radius: 50%;
     opacity: 0.5;
     z-index: 1;
@@ -535,37 +534,34 @@ section {
     z-index: 5;
 }
 
-/* 6点の星形の配置 */
-.components-circle .component-item:nth-child(1) { /* AetherOS */
-    top: 5%;
+/* 5点星の配置 */
+.components-circle .component-item:nth-child(1) { /* AetherOS - 星の頂点 */
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.components-circle .component-item:nth-child(2) { /* LumiaDesktop */
-    top: 25%;
-    right: 5%;
+.components-circle .component-item:nth-child(2) { /* LumiaDesktop - 右上の点 */
+    top: 35%;
+    right: 10%;
 }
 
-.components-circle .component-item:nth-child(3) { /* FerroShell */
-    bottom: 25%;
-    right: 5%;
+.components-circle .component-item:nth-child(3) { /* FerroShell - 右下の点 */
+    bottom: 15%;
+    right: 25%;
 }
 
-.components-circle .component-item:nth-child(4) { /* Selenet */
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
+.components-circle .component-item:nth-child(4) { /* Selenet - 左下の点 */
+    bottom: 15%;
+    left: 25%;
 }
 
-.components-circle .component-item:nth-child(5) { /* AeroJS */
-    bottom: 25%;
-    left: 5%;
+.components-circle .component-item:nth-child(5) { /* AeroJS - 左上の点 */
+    top: 35%;
+    left: 10%;
 }
 
 .components-circle .component-item:nth-child(6) { /* 追加コンポーネント用（現在は非表示） */
-    top: 25%;
-    left: 5%;
     display: none;
 }
 
