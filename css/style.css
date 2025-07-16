@@ -2132,3 +2132,38 @@ section {
         grid-template-columns: 1fr;
     }
 } 
+
+/* 日本語リワード説明のスタイル */
+.reward-jp {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border-color);
+}
+
+.reward-jp h5 {
+    font-size: var(--font-size-sm);
+    color: var(--light-purple);
+    margin-bottom: var(--spacing-sm);
+}
+
+.reward-jp p {
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.reward-limit {
+    margin-top: var(--spacing-md);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--accent-magenta);
+}
+
+.reward-note {
+    margin-top: var(--spacing-md);
+    font-size: var(--font-size-sm);
+    font-style: italic;
+    color: var(--text-muted);
+    line-height: 1.5;
+} 
