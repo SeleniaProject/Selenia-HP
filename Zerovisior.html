@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeleniaProject - Zerovisior</title>
+    <meta name="description" content="Zerovisior - A secure, lightweight hypervisor and virtualization platform for the SeleniaProject ecosystem.">
+    <meta name="keywords" content="SeleniaProject, Zerovisior, Hypervisor, Virtualization, Security, Isolation, Rust">
+    <meta name="author" content="Aqua">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <img src="Logo/SeleniaProject .png" alt="SeleniaProject Logo" class="logo-img">
+                <span class="logo-text">SeleniaProject</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="project.html" class="nav-link">Project</a></li>
+                <li><a href="rewards.html" class="nav-link">Rewards</a></li>
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="index.html#progress" class="nav-link">Progress</a></li>
+                <li><a href="index.html#roadmap" class="nav-link">Roadmap</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero project-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Zerovisior</h1>
+                <p class="hero-subtitle">A secure, lightweight hypervisor and virtualization platform</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview Section -->
+    <section class="project-vision">
+        <div class="container">
+            <h2 class="section-title">Overview</h2>
+            <div class="vision-content">
+                <div class="vision-text">
+                    <p class="vision-lead">Zerovisior is a next-generation hypervisor and virtualization platform designed for security, performance, and flexibility within the SeleniaProject ecosystem.</p>
+                    <p>Built from the ground up with Rust's memory safety guarantees, Zerovisior provides strong isolation between virtual environments while maintaining near-native performance through innovative virtualization techniques.</p>
+                    <p>Unlike traditional hypervisors that focus solely on server consolidation, Zerovisior is designed for a wide range of use cases, from secure application sandboxing to full system virtualization, with a focus on security, resource efficiency, and seamless integration with the rest of the SeleniaProject ecosystem.</p>
+                </div>
+                <div class="vision-image">
+                    <img src="images/FerroShell.png" alt="Zerovisior Logo" class="vision-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section class="core-technology">
+        <div class="container">
+            <h2 class="section-title">Core Features</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">🛡️</div>
+                    <h3>Secure Isolation</h3>
+                    <p>Strong security boundaries between virtual environments with minimal attack surface and hardware-assisted isolation.</p>
+                    <ul class="tech-features">
+                        <li>Hardware virtualization extensions</li>
+                        <li>Memory isolation techniques</li>
+                        <li>Secure boot process</li>
+                        <li>Minimal trusted computing base</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">⚡</div>
+                    <h3>High-Performance Virtualization</h3>
+                    <p>Near-native performance through optimized resource management and minimal virtualization overhead.</p>
+                    <ul class="tech-features">
+                        <li>Paravirtualization optimizations</li>
+                        <li>Direct device assignment</li>
+                        <li>Efficient memory management</li>
+                        <li>CPU scheduling optimizations</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">🧩</div>
+                    <h3>Flexible Virtualization Models</h3>
+                    <p>Support for multiple virtualization approaches to meet different use cases and security requirements.</p>
+                    <ul class="tech-features">
+                        <li>Full system virtualization</li>
+                        <li>Application containers</li>
+                        <li>Library OS environments</li>
+                        <li>Secure execution enclaves</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Details Section -->
+    <section class="development-approach">
+        <div class="container">
+            <h2 class="section-title">Technical Architecture</h2>
+            <div class="approach-content">
+                <div class="approach-item">
+                    <div class="approach-icon">🔄</div>
+                    <h3>Type-1 Hypervisor Design</h3>
+                    <p>Runs directly on hardware with minimal software layers, reducing attack surface and maximizing performance and security.</p>
+                </div>
+                <div class="approach-item">
+                    <div class="approach-icon">🔍</div>
+                    <h3>Formal Verification</h3>
+                    <p>Critical security components are formally verified to mathematically prove the absence of certain classes of vulnerabilities.</p>
+                </div>
+                <div class="approach-item">
+                    <div class="approach-icon">📊</div>
+                    <h3>Resource-Aware Scheduling</h3>
+                    <p>Intelligent allocation of system resources based on workload characteristics, priorities, and performance requirements.</p>
+                </div>
+                <div class="approach-item">
+                    <div class="approach-icon">🔌</div>
+                    <h3>Hardware Abstraction</h3>
+                    <p>Consistent interface for virtual machines across different hardware platforms while enabling direct access where appropriate for performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section class="project-components">
+        <div class="container">
+            <h2 class="section-title">Ecosystem Integration</h2>
+            <div class="components-list">
+                <div class="component-item detailed">
+                    <div class="component-header">
+                        <img src="Logo/AetherOS.png" alt="AetherOS Logo" class="component-logo">
+                        <h3>AetherOS Integration</h3>
+                    </div>
+                    <div class="component-description">
+                        <p>Seamless integration with AetherOS for both hosting virtual environments and running as a guest within other hypervisors.</p>
+                        <ul>
+                            <li>Optimized guest drivers</li>
+                            <li>Secure host integration</li>
+                            <li>Resource sharing capabilities</li>
+                            <li>Nested virtualization support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="component-item detailed">
+                    <div class="component-header">
+                        <img src="Logo/FerroShell.png" alt="FerroShell Logo" class="component-logo">
+                        <h3>FerroShell Integration</h3>
+                    </div>
+                    <div class="component-description">
+                        <p>Comprehensive management tools for creating, configuring, and monitoring virtual environments.</p>
+                        <ul>
+                            <li>VM lifecycle management</li>
+                            <li>Resource monitoring tools</li>
+                            <li>Configuration automation</li>
+                            <li>Snapshot and migration utilities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="component-item detailed">
+                    <div class="component-header">
+                        <img src="Logo/Orizon.png" alt="Orizon Logo" class="component-logo">
+                        <h3>Orizon Integration</h3>
+                    </div>
+                    <div class="component-description">
+                        <p>Integration with Orizon cloud platform for distributed virtualization and workload migration.</p>
+                        <ul>
+                            <li>Live VM migration</li>
+                            <li>Distributed resource pools</li>
+                            <li>Cross-device virtualization</li>
+                            <li>Secure remote execution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Roadmap Section -->
+    <section class="future-vision">
+        <div class="container">
+            <h2 class="section-title">Development Roadmap</h2>
+            <div class="vision-timeline">
+                <div class="timeline-phase">
+                    <div class="phase-marker">Phase 1</div>
+                    <div class="phase-content">
+                        <h3>Core Hypervisor Development</h3>
+                        <p>Implementation of the fundamental virtualization engine with hardware-assisted isolation and basic VM management.</p>
+                    </div>
+                </div>
+                <div class="timeline-phase">
+                    <div class="phase-marker">Phase 2</div>
+                    <div class="phase-content">
+                        <h3>Performance Optimization & Features</h3>
+                        <p>Enhancing performance, adding advanced features, and expanding hardware support.</p>
+                    </div>
+                </div>
+                <div class="timeline-phase">
+                    <div class="phase-marker">Phase 3</div>
+                    <div class="phase-content">
+                        <h3>Security Hardening & Verification</h3>
+                        <p>Formal verification of critical components, security auditing, and implementation of advanced security features.</p>
+                    </div>
+                </div>
+                <div class="timeline-phase">
+                    <div class="phase-marker">Phase 4</div>
+                    <div class="phase-content">
+                        <h3>Ecosystem Integration & Extension</h3>
+                        <p>Deep integration with all SeleniaProject components and development of specialized virtualization features.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vision-conclusion">
+                <p>Zerovisior represents a fundamental reimagining of virtualization technology, focusing on security, performance, and flexibility to enable new use cases and enhanced protection in an increasingly complex computing landscape.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="project-cta">
+        <div class="container">
+            <h2>Explore Other Components</h2>
+            <p>Discover how Zerovisior works together with other SeleniaProject components to create a complete ecosystem.</p>
+            <div class="cta-buttons">
+                <a href="project.html" class="btn btn-primary btn-large">Back to Projects</a>
+                <a href="AetherOS.html" class="btn btn-secondary">Explore AetherOS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 SeleniaProject. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/SeleniaProject" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

@@ -2166,4 +2166,351 @@ section {
     font-style: italic;
     color: var(--text-muted);
     line-height: 1.5;
-} 
+}
+
+/* Add-on Packs Styling */
+.addon-packs-section {
+    margin-top: var(--spacing-4xl);
+    padding: var(--spacing-4xl) 0;
+    background: linear-gradient(135deg, rgba(107, 70, 193, 0.03) 0%, rgba(139, 92, 246, 0.05) 100%);
+    border-radius: 24px;
+    position: relative;
+}
+
+.addon-packs-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, rgba(107, 70, 193, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+    border-radius: 24px;
+    pointer-events: none;
+}
+
+.addon-packs-section h3 {
+    text-align: center;
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+    z-index: 1;
+}
+
+.addon-description {
+    text-align: center;
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-3xl);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.addon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-xl);
+    position: relative;
+    z-index: 1;
+}
+
+.addon-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: var(--spacing-xl);
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.addon-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-normal);
+}
+
+.addon-card:hover::before {
+    transform: scaleX(1);
+}
+
+.addon-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(107, 70, 193, 0.3);
+    box-shadow: 0 20px 40px -12px rgba(107, 70, 193, 0.2);
+}
+
+.addon-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.addon-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: var(--spacing-md);
+    filter: drop-shadow(0 4px 8px rgba(107, 70, 193, 0.3));
+}
+
+.addon-name {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.addon-price {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--spacing-xs);
+}
+
+.addon-tagline {
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.addon-content h5 {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--light-purple);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.addon-limit {
+    font-size: var(--font-size-sm);
+    color: var(--accent-magenta);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(236, 72, 153, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(236, 72, 153, 0.2);
+}
+
+.addon-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.addon-list li {
+    padding: var(--spacing-sm) 0;
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    position: relative;
+    padding-left: var(--spacing-lg);
+    line-height: 1.5;
+}
+
+.addon-list li::before {
+    content: '✨';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-purple);
+    font-size: var(--font-size-sm);
+}
+
+.addon-note {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: rgba(107, 70, 193, 0.05);
+    border-left: 4px solid var(--secondary-purple);
+    border-radius: 0 8px 8px 0;
+    font-size: var(--font-size-sm);
+    font-style: italic;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Special styling for different gem tiers */
+.addon-card.bronze {
+    border-color: rgba(205, 127, 50, 0.3);
+}
+
+.addon-card.bronze:hover {
+    border-color: rgba(205, 127, 50, 0.5);
+    box-shadow: 0 20px 40px -12px rgba(205, 127, 50, 0.2);
+}
+
+.addon-card.silver {
+    border-color: rgba(192, 192, 192, 0.3);
+}
+
+.addon-card.silver:hover {
+    border-color: rgba(192, 192, 192, 0.5);
+    box-shadow: 0 20px 40px -12px rgba(192, 192, 192, 0.2);
+}
+
+.addon-card.gold {
+    border-color: rgba(255, 215, 0, 0.3);
+}
+
+.addon-card.gold:hover {
+    border-color: rgba(255, 215, 0, 0.5);
+    box-shadow: 0 20px 40px -12px rgba(255, 215, 0, 0.2);
+}
+
+.addon-card.ruby {
+    border-color: rgba(224, 17, 95, 0.3);
+}
+
+.addon-card.ruby:hover {
+    border-color: rgba(224, 17, 95, 0.5);
+    box-shadow: 0 20px 40px -12px rgba(224, 17, 95, 0.2);
+}
+
+.addon-card.diamond {
+    border-color: rgba(185, 242, 255, 0.3);
+}
+
+.addon-card.diamond:hover {
+    border-color: rgba(185, 242, 255, 0.5);
+    box-shadow: 0 20px 40px -12px rgba(185, 242, 255, 0.2);
+}
+
+.addon-card.emerald {
+    border-color: rgba(80, 200, 120, 0.3);
+}
+
+.addon-card.emerald:hover {
+    border-color: rgba(80, 200, 120, 0.5);
+    box-shadow: 0 20px 40px -12px rgba(80, 200, 120, 0.2);
+}
+
+.addon-card.sapphire {
+    border-color: rgba(15, 82, 186, 0.3);
+}
+
+.addon-card.sapphire:hover {
+    border-color: rgba(15, 82, 186, 0.5);
+    box-shadow: 0 20px 40px -12px rgba(15, 82, 186, 0.2);
+}
+
+.addon-card.amethyst {
+    border-color: rgba(153, 102, 204, 0.3);
+}
+
+.addon-card.amethyst:hover {
+    border-color: rgba(153, 102, 204, 0.5);
+    box-shadow: 0 20px 40px -12px rgba(153, 102, 204, 0.2);
+}
+
+.addon-card.platinum {
+    border-color: rgba(229, 228, 226, 0.3);
+}
+
+.addon-card.platinum:hover {
+    border-color: rgba(229, 228, 226, 0.5);
+    box-shadow: 0 20px 40px -12px rgba(229, 228, 226, 0.2);
+}
+
+.addon-card.master {
+    border-color: rgba(255, 215, 0, 0.4);
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.05) 0%, rgba(107, 70, 193, 0.05) 100%);
+}
+
+.addon-card.master:hover {
+    border-color: rgba(255, 215, 0, 0.6);
+    box-shadow: 0 25px 50px -12px rgba(255, 215, 0, 0.3);
+}
+
+.addon-card.quantum {
+    border-color: rgba(147, 51, 234, 0.4);
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%);
+}
+
+.addon-card.quantum:hover {
+    border-color: rgba(147, 51, 234, 0.6);
+    box-shadow: 0 25px 50px -12px rgba(147, 51, 234, 0.3);
+}
+
+.addon-card.universal {
+    border-color: rgba(107, 70, 193, 0.5);
+    background: linear-gradient(135deg, rgba(107, 70, 193, 0.08) 0%, rgba(236, 72, 153, 0.08) 100%);
+    position: relative;
+}
+
+.addon-card.universal:hover {
+    border-color: rgba(107, 70, 193, 0.7);
+    box-shadow: 0 30px 60px -12px rgba(107, 70, 193, 0.4);
+}
+
+.addon-card.universal .ultimate-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--gradient-primary);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: 20px;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(107, 70, 193, 0.3);
+}
+
+/* Responsive design for add-on packs */
+@media (max-width: 768px) {
+    .addon-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .addon-packs-section {
+        padding: var(--spacing-2xl) var(--spacing-md);
+        margin-top: var(--spacing-2xl);
+    }
+    
+    .addon-packs-section h3 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .addon-card {
+        padding: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .addon-description {
+        font-size: var(--font-size-base);
+        padding: 0 var(--spacing-md);
+    }
+    
+    .addon-icon {
+        font-size: 2.5rem;
+    }
+    
+    .addon-name {
+        font-size: var(--font-size-lg);
+    }
+    
+    .addon-price {
+        font-size: var(--font-size-xl);
+    }
+}
